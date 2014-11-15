@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Açık kaynaklı ve özgür yazılımlar</title>
+
+  <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+  <meta name="author" content="Hakim El Hattab">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+  <!-- For syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+
+  <!-- Include the appropriate print stylesheet -->
+  <script>
+   var link = document.createElement( 'link' );
+   link.rel = 'stylesheet';
+   link.type = 'text/css';
+   link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+   document.getElementsByTagName( 'head' )[0].appendChild( link );
+ </script>
+
+
+ <style type="text/css">
+  img{
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+
+  img.logo{
+    width: 300px !important;
+    height: 300px;
+  }
+
+  .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6{
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .reveal h1 {
+    font-size: 3em;
+  }
+
+  section[data-background] h1, section[data-background] h2, section[data-background] p{
+    color: white;
+  }
+
+</style>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Özgür Yazılım</h1>
+					<h3>Özgür Yazılım ve açık kaynak kodlu yazılım kültürü</h3>
+					<p>
+						<small><a href="http://www.dorukdestan.com">Destan Sarpkaya</a> / <a href="http://twitter.com/dorukdestan">@dorukdestan</a></small>
+					</p>
+				</section>
+
+        <section>
+
+          <section data-background="#007777">
+            <h1 style=" color: white;">Nedir?</h1>
+          </section>
+
+          <section>
+            <ul>
+              <li>Özgür yazılım == Free software</li>
+              <li>Açık kaynak kod == Open source</li>
+            </ul>
+          </section>
+
+          <section>
+            <div>
+              <p>Free <strong style="color: firebrick;">!=</strong> Ücretsiz</p>
+              <p><strike>Free as in "free beer"</strike></p>
+              <p>Free as in "free speech"</p>
+            </div>
+          </section>
+
+        </section>
+
+        <section>
+          <section>
+            <h3><span style="color: firebrick;">Özgür yazılım</span> 4 özgürlük sunar</h3>
+            <div>
+              <ol start="0">
+                <li>Programı dilediğin gibi, herhangi bir amaçla çalıştırma özgürlüğü.</li>
+                <li>Programın nasıl çalıştığını inceleme ve dilediğin işlemleri yapacak biçimde onu değiştirme özgürlüğü.</li>
+                <li>Kopyalarını dağıtma özgürlüğü.</li>
+                <li>Kendi değiştirilmiş sürümlerini dağıtma özgürlüğü.</li>
+              </ol>
+            </div>
+            <img class="logo" src="img/gnu-head.png">
+            <img class="logo" src="img/fsf.svg">
+          </section>
+
+          <section>
+            <h3>Özgür Yazılım Hareketi</h3>
+            <img src="img/stallman.jpg">
+
+            <p>Richard Stallman</p>
+          </section>
+
+          <section>
+            <h3>Açık kaynak kod için 10 kural</h3>
+
+            <div>
+              <ul>
+                <li>Temelde aynı özgürlükleri sunar</li>
+                <li>Fark felsefi boyutta</li>
+              </ul>
+            </div>
+
+            <img class="logo" src="img/osi_standard_logo.png">
+
+          </section>
+        </section>
+
+        <section>
+          <h3>Copyleft</h3>
+          <strong>En Çok Karıştırılan Kavram</strong>
+
+          <div>
+            <img class="logo" style="width: 100px !important;height: 100px !important;" src="img/copyleft.png">
+          </div>
+
+          <blockquote class="fragment">
+            “Bir özgür yazılım üzerinde yaptığınız değişiklikleri sizin de özgür bir lisansla paylaşmanızı gerektiren kavrama copyleft denir.”
+          </blockquote>
+
+          <div class="fragment">
+            <p>Özgür yazılım <span style="color:firebrick">!=</span> Copyleft</p>
+            <p>Açık kaynak <span style="color:firebrick">!=</span> Copyleft</p>
+          </div>
+        </section>
+
+        <section>
+          <h3>Lisanslar</h3>
+
+          <style type="text/css">
+            td:nth-child(2){
+              text-align: center !important;
+            }
+          </style>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Lisans</th>
+                <th>Copyleft</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>GPL (GNU Public License)</td>
+                <td>✓</td>
+              </tr>
+              <tr>
+                <td>MIT</td>
+                <td>x</td>
+              </tr>
+              <tr>
+                <td>Apache</td>
+                <td>x</td>
+              </tr>
+              <tr>
+                <td>BSD</td>
+                <td>x</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <section data-background="#8c4738">
+            <h1>Neden?</h1>
+            <p class="fragment">Geliştirici gözünden</p>
+          </section>
+
+          <section>
+            <ul>
+              <li>Topluluk, ekosistem</li>
+              <ul>
+                <li class="fragment">Yani geri bildirim</li>
+                <li class="fragment">Yani pull-request (kod gönderme)</li>
+                <li class="fragment">Yani kullanıcı testi</li>
+              </ul>
+              <li class="fragment">Daha geniş kullanıcı kitlesi</li>
+              <li class="fragment">Saygınlık, bilinirlik</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section data-background="#8c4738">
+            <h1>Neden?</h1>
+            <p class="fragment">Kullanıcı gözünden</p>
+          </section>
+
+          <section>
+            <ul>
+              <li>Daha kaliteli</li>
+              <ul>
+                <li class="fragment">Rekabetten doğan kalite</li>
+              </ul>
+              <li class="fragment">Destek avantajı</li>
+              <ul>
+                <li class="fragment">Fahiş fiyat uygulanamaz</li>
+                <li class="fragment">Çoklu destek noktası</li>
+              </ul>
+              <li class="fragment">Standartı takip eden uygulamalar</li>
+              <li class="fragment">Vendor Lock-in riski yok</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <h1>Ama ...</h1>
+
+          <ul>
+            <li class="fragment">ya güvenlik?</li>
+            <li class="fragment">ya kodumu çalarlarsa?</li>
+            <li class="fragment">ya rakiplerime kolaylık sağlarsa?</li>
+          </ul>
+        </section>
+
+        <section>
+          <section data-background="#4d7e65">
+            <h2>Nasıl Para Kazanacağız?</h2>
+            
+          </section>
+
+          <section>
+
+            <p>Hala yazılımı satabilirsiniz.</p>
+
+            <p class="fragment">Ancak daha iyisi, yazılımı satmayıp,</p>
+
+            <ul>
+              <li class="fragment">Destek satabilirsiniz</li>
+              <li class="fragment">Eklenti satabilirsiniz</li>
+              <li class="fragment">Özelleştirme satabilirsiniz</li>
+              <li class="fragment">Servis satabilirsiniz
+                <ul>
+                  <li class="fragment">Hosting / Cloud storage</li>
+                  <li class="fragment">Son kullanıcı servisleri</li>
+                  <li class="fragment">SaaS</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <h1>Sonuçta</h1>
+
+          <ul>
+            <li class="fragment">Daha yetenekli, bilgili bir yazılmcı</li>
+            <li class="fragment">Gerçek rekabet == Daha kaliteli ürün</li>
+            <li class="fragment">Uzun vadeli çözümler, sürekli para kazanımı</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Teşekkürler</h2>
+
+          <p>Sorular?</p>
+        </section>
+        
+      </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme || 'solarized', // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+       { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+       { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+       { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+       { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+       { src: 'plugin/zoom-js/zoom.js', async: true },
+       { src: 'plugin/notes/notes.js', async: true }
+       ]
+     });
+
+</script>
+
+</body>
+</html>
